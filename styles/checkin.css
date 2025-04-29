@@ -1,0 +1,142 @@
+.checkin-form {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+  }
+  
+  .form-container {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+  }
+  
+  .form-container h3 {
+    color: var(--primary);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .form-container h3 i {
+    margin-right: 10px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--dark);
+    font-weight: 500;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border 0.3s;
+  }
+  
+  .form-group input:focus {
+    border-color: var(--secondary);
+    outline: none;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .submit-btn i {
+    margin-left: 8px;
+  }
+  
+  .submit-btn:hover {
+    background: #002244;
+  }
+  
+  .boarding-pass {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    display: none; /* Hidden until form submission */
+  }
+  
+  .pass-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 15px;
+  }
+  
+  .pass-header h3 {
+    color: var(--primary);
+  }
+  
+  .pass-header img {
+    width: 40px;
+  }
+  
+  .pass-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  
+  .detail {
+    margin-bottom: 10px;
+  }
+  
+  .detail span {
+    display: block;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .detail strong {
+    font-size: 16px;
+  }
+  
+  .qrcode {
+    grid-column: span 2;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .qr-placeholder {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 10px;
+    background: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+  }
+
+  .qrcode img {
+    width: 150px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the QR code */
+  }

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Passenger Check-In | SkyPort</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/checkin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Sidebar (Same as Dashboard) -->
+  <nav class="sidebar">
+    <div class="logo">
+      <img src="assets/airplane.png" alt="Airport Logo">
+      <h1>SkyPort</h1>
+    </div>
+    <ul>
+      <li><a href="index.html"><i class="fas fa-home"></i> Dashboard</a></li>
+      <li class="active"><a href="checkin.html"><i class="fas fa-ticket-alt"></i> Check-In</a></li>
+      <li><a href="analytics.html"><i class="fas fa-chart-bar"></i> Analytics</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="content">
+    <header>
+      <h2>Passenger Check-In</h2>
+      <div class="user-profile">
+        <span>Welcome, Agent</span>
+        <img src="https://ui-avatars.com/api/?name=Agent&background=003366&color=fff" alt="User">
+      </div>
+    </header>
+
+    <!-- Check-In Form -->
+    <section class="checkin-form">
+      <div class="form-container">
+        <h3><i class="fas fa-user-check"></i> Enter Details</h3>
+        <form id="checkinForm">
+          <div class="form-group">
+            <label for="bookingRef">Booking Reference</label>
+            <input type="text" id="bookingRef" placeholder="e.g., BA123XYZ" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" placeholder="e.g., Smith" required>
+          </div>
+          <button type="submit" class="submit-btn">Check In <i class="fas fa-arrow-right"></i></button>
+        </form>
+      </div>
+
+      <!-- Boarding Pass (Hidden by Default) -->
+      <div class="boarding-pass" id="boardingPass">
+        <div class="pass-header">
+          <h3>BOARDING PASS</h3>
+          <img src="assets/airplane.png" alt="Airline Logo">
+        </div>
+        <div class="pass-details">
+          <div class="detail">
+            <span>Passenger</span>
+            <strong id="passengerName">-</strong>
+          </div>
+          <div class="detail">
+            <span>Flight</span>
+            <strong id="flightNumber">BA 123</strong>
+          </div>
+          <div class="detail">
+            <span>Gate</span>
+            <strong>A12</strong>
+          </div>
+          <div class="detail">
+            <span>Departure</span>
+            <strong>14:30</strong>
+          </div>
+          <div class="qrcode">
+            <img src="assets/qrcode.png" alt="QR Code">
+            <small>Scan at gate</small>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="scripts/checkin.js"></script>
+</body>
+</html>
